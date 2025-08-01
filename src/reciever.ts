@@ -1,5 +1,5 @@
 import { WorkerMessageType } from './workerTypes';
-
+import { loadPyodide } from 'pyodide';
 
 
 // recieve messages from webworker in file worker.mts
@@ -34,3 +34,8 @@ export const setupWorkerListener = (worker: Worker) : Worker | null => {
     return worker;
 }
 
+
+
+const runCode = (code: string) => {
+
+}
